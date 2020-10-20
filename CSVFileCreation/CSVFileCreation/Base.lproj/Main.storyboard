@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CSVFileCreation" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CSV File Creation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dWJ-0C-Z7g">
+                                <rect key="frame" x="10" y="37" width="394" height="41"/>
+                                <fontDescription key="fontDescription" name="Avenir-HeavyOblique" family="Avenir" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="JSON Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1vU-aD-29j">
+                                <rect key="frame" x="17" y="86" width="381" height="22"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c4y-B3-paN">
+                                <rect key="frame" x="16" y="112" width="387" height="148"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="148" id="M5W-93-pK7"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="File Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YVh-4Y-pjF">
+                                <rect key="frame" x="15" y="279" width="375" height="22"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctD-ph-2Db">
+                                <rect key="frame" x="21" y="326" width="374" height="62"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="yvE-J3-Vh2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Generate JSON">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnGenerateJSONAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ISp-3t-1WC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wde-yG-Mmg">
+                                <rect key="frame" x="21" y="436" width="374" height="62"/>
+                                <color key="backgroundColor" systemColor="linkColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="62" id="aYs-TJ-sZT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Write CSV File &amp; Share">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnWriteFileAndShareAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JjR-q7-FHF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.41634525849999998" green="1" blue="0.84521318970000003" alpha="0.92481844189999995" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dWJ-0C-Z7g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="37" id="0SK-ew-Liy"/>
+                            <constraint firstItem="Wde-yG-Mmg" firstAttribute="centerX" secondItem="ctD-ph-2Db" secondAttribute="centerX" id="2qa-im-gI2"/>
+                            <constraint firstItem="Wde-yG-Mmg" firstAttribute="width" secondItem="ctD-ph-2Db" secondAttribute="width" id="A3J-x5-mRM"/>
+                            <constraint firstItem="1vU-aD-29j" firstAttribute="top" secondItem="dWJ-0C-Z7g" secondAttribute="bottom" constant="8" symbolic="YES" id="KuD-ST-5x7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1vU-aD-29j" secondAttribute="trailing" constant="16" id="OUL-ji-YZy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dWJ-0C-Z7g" secondAttribute="trailing" constant="10" id="Sx7-Aj-YvI"/>
+                            <constraint firstItem="dWJ-0C-Z7g" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="T3Z-uq-zHa"/>
+                            <constraint firstItem="YVh-4Y-pjF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="TXB-fw-JSC"/>
+                            <constraint firstItem="c4y-B3-paN" firstAttribute="top" secondItem="1vU-aD-29j" secondAttribute="bottom" constant="4" id="bVe-hg-qtB"/>
+                            <constraint firstItem="Wde-yG-Mmg" firstAttribute="top" secondItem="ctD-ph-2Db" secondAttribute="bottom" constant="48" id="cXU-eA-nL3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c4y-B3-paN" secondAttribute="trailing" constant="11" id="cqd-tI-Emn"/>
+                            <constraint firstItem="ctD-ph-2Db" firstAttribute="top" secondItem="YVh-4Y-pjF" secondAttribute="bottom" constant="25" id="dVA-IA-k00"/>
+                            <constraint firstItem="ctD-ph-2Db" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="21" id="e8J-a3-g1D"/>
+                            <constraint firstItem="1vU-aD-29j" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="hnU-lm-YwN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ctD-ph-2Db" secondAttribute="trailing" constant="19" id="kdg-zJ-P4a"/>
+                            <constraint firstItem="YVh-4Y-pjF" firstAttribute="top" secondItem="c4y-B3-paN" secondAttribute="bottom" constant="19" id="lHt-51-Akh"/>
+                            <constraint firstItem="c4y-B3-paN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ne6-an-iVW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YVh-4Y-pjF" secondAttribute="trailing" constant="24" id="tWH-XT-Ktd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnGenerateJSON" destination="ctD-ph-2Db" id="qEe-XE-1s5"/>
+                        <outlet property="btnWriteJsonNShare" destination="Wde-yG-Mmg" id="sHq-HJ-LtX"/>
+                        <outlet property="lblFileStatus" destination="YVh-4Y-pjF" id="zEG-6k-iyM"/>
+                        <outlet property="txtView" destination="c4y-B3-paN" id="Y0q-aO-g7Q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="528.98550724637687" y="69.642857142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
